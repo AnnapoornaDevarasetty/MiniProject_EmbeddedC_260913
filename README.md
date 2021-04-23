@@ -2,6 +2,6 @@
 ## Activity-1
 ### In Action
 
-|ON|OF|
+|ON|OFF|
 |--|--|
-|![screen 1500px](../simulation\Activity1_ON.PNG)|![screen 1500px](../simulation\Activity1_OFF.PNG)|
+| ![screen 1500px](simulation\Activity1_ON.PNG)| ![screen 1500px](simulation\Activity1_OFF.PNG)|
