@@ -58,7 +58,7 @@ function toggleLevel(level) {
       i.removeClass("iconfopen iconfclosed").addClass("iconfopen");
       a.html("&#9660;");
       $(this).show();
-    } else if (l == level + 1) {
+    } else if (l === level + 1) {
       i.removeClass("iconfclosed iconfopen").addClass("iconfclosed");
       a.html("&#9658;");
       $(this).show();

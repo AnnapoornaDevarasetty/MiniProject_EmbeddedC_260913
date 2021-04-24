@@ -71,7 +71,7 @@ function SearchBox(name, resultsPath, inFrame, label, extension) {
   if (!name || !resultsPath) {
     alert("Missing parameters to SearchBox.");
   }
-  if (!extension || extension == "") {
+  if (!extension || extension === "") {
     extension = ".html";
   }
 
@@ -178,7 +178,7 @@ function SearchBox(name, resultsPath, inFrame, label, extension) {
 
     var e = evt ? evt : window.event; // for IE
     if (e.keyCode == 40 || e.keyCode == 13) {
-      if (e.shiftKey == 1) {
+      if (e.shiftKey === 1) {
         this.OnSearchSelectShow();
         var win = this.DOMSearchSelectWindow();
         for (i = 0; i < win.childNodes.length; i++) {
@@ -205,7 +205,7 @@ function SearchBox(name, resultsPath, inFrame, label, extension) {
     // strip whitespaces
     var searchValue = this.DOMSearchField().value.replace(/ +/g, "");
 
-    if (searchValue != this.lastSearchValue) {
+    if (searchValue !== this.lastSearchValue) {
       // search value has changed
       if (searchValue != "") {
         // non-empty search
