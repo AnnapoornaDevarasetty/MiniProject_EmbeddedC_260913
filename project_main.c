@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include "heatcontrolsystem.h"
+#include "heatcontrol.h"
 #include <avr/io.h>
 #include <util/delay.h>
 
