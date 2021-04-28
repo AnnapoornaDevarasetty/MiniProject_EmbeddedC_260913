@@ -1,14 +1,15 @@
 /**
  * @file project_main.c
- * @author V S Annapoorna Devarasetty (annapurnadvs@gmail.com)
- * @brief   Activity-1 of Embedded Systems
+ * @author V S Annapoorna Devarasetty 
+ * @brief  Main program to execute heat control system
  * @version 0.1
  * @date 2021-04-24
  * 
  * @copyright Copyright (c) 2021
  * 
  */
-#include <avr/io.h>
+//#include <avr/io.h>
+#include "heatcontrolsystem.h"
 
 /**
  * @brief 
@@ -17,23 +18,27 @@
  */
 int main(void)
 {
-    DDRB|=(1<<PB0);         //Set B0=1 for LED
-    DDRD&=~(1<<PD0);        //Clear bit at D0
-    PORTD|=(1<<PD0);        //Set bit at D0
-    DDRD&=~(1<<PD1);        //Clear bit at D1
-    PORTD|=(1<<PD1);        //Set bit at D1
-
+    peripheralInit();
+    Init_ADC();
+    uint16_t temp;
     while(1)
     {
-        if(!(PIND&(1<<PD0))&&!(PIND&(1<<PD1)))        //If both the switches are ON the LED glows
+        if(!(PIND&(1<<PD0))&&!(PIND&(1<<PD1)))        //If both button and heater are ON the LED glows
         {
-            PORTB|=(1<<PB0);
+            LED_ON;
+            while(1)
+            {
+                temp=Read_ADC(0);
+                _delay_ms(200);
+            }
+
         }
-        else                                          //Even one switch is off the LED doesn't glow
+        else                                          //Even one of button and heater is off the LED doesn't glow
         {
-            PORTB&=~(1<<PB0);
+            LED_OFF;
         }
     }
-
     return 0;
 }
+
+
