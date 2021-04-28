@@ -4,7 +4,9 @@ PROJ_NAME = HeatControlSystem
 BUILD_DIR = Build
 
 # All Source code files
-SRC = project_main.c
+SRC = src/activity1.c\
+src/activity2.c\
+project_main.c
 
 # All header file paths
 INC = -I inc
