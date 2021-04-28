@@ -1,5 +1,5 @@
   
-PROJ_NAME = Activity1
+PROJ_NAME = HeatControlSystem
 
 BUILD_DIR = Build
 
