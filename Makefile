@@ -1,5 +1,5 @@
   
-PROJ_NAME = heatcontrolsystem
+PROJ_NAME = Activities
 
 BUILD_DIR = Build
 
@@ -10,7 +10,7 @@ src/activity2.c\
 
 
 # All header file paths
-INC = -I inc/heatcontrolsystem.h
+INC = -I inc
 
 #Object copy to create hexfile
 OBJCOPY = avr-objcopy.exe
