@@ -25,5 +25,23 @@
  * 
  */
 #define LED_OFF PORTB&=~(1<<PB0)
+/**
+ * @brief Setting and Clearing the LED's
+ * 
+ */
+void peripheralInit();
+/**
+ * @brief Intialising analog to digital coverter
+ * 
+ */
+void Init_ADC();
+/**
+ * @brief To recieve the inputs from temperature sensor to a register ADC
+ * 
+ * @param ch 
+ * @return uint16_t 
+ */
+uint16_t Read_ADC(uint8_t ch);
+
 
 #endif /** __HEATCONTROLSYSTEM_H_ */

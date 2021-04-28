@@ -1,4 +1,5 @@
 #include "heatcontrolsystem.h"
+#include <avr/io.h>
 
 void Init_ADC()
 {
