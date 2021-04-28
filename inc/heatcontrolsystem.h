@@ -1,9 +1,8 @@
-#ifndef _HEATCONTROLSYSTEM_H_
-#define _HEATCONTROLSYSTEM_H_
+#ifndef __HEATCONTROLSYSTEM_H_
+#define __HEATCONTROLSYSTEM_H_
 
 #include <avr/io.h>
 #include <util/delay.h>
-
 /**
  * @brief Macro to turn the LED ON by setting 0th bit of PORTB
  * 
@@ -31,4 +30,5 @@ void Init_ADC();
  * @return uint16_t 
  */
 uint16_t Read_ADC(uint8_t ch);
+
 #endif //_HEATCONTROLSYSTEM_H_
