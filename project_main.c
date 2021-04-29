@@ -29,7 +29,6 @@ int main(void)
     TimerGenerator();
     UART_Init(103);
     uint16_t read;
-    char data;
     while(1)
     {
         if(!(PIND&(1<<PD0))&&!(PIND&(1<<PD1)))        //If both the switches are ON the LED glows
@@ -38,7 +37,7 @@ int main(void)
             while(1)
             {
                 read=Read_ADC(0);
-                data = PWMOutput(read);
+                PWMOutput(read);
                 _delay_ms(200);
             }
 
