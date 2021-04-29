@@ -13,6 +13,7 @@
 
 #include <avr/io.h>
 #include <util/delay.h>
+#include<string.h>
 /**
  * @brief Generating Timer Wave
  * 
