@@ -22,7 +22,6 @@ int main(void)
 {
     peripheralInit();
     Init_ADC();
-    uint16_t temp;
     while(1)
     {
         if(!(PIND&(1<<PD0))&&!(PIND&(1<<PD1)))        //If both button and heater are ON the LED glows
@@ -30,7 +29,7 @@ int main(void)
             LED_ON;
             while(1)
             {
-                temp=Read_ADC(0);
+                Read_ADC(0);
                 _delay_ms(200);
             }
 

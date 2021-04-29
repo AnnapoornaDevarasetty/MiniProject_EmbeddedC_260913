@@ -1,6 +1,5 @@
 # MiniProject_EmbeddedC_260913
 ## Activity-1
-### In Action
 
 |ON|OFF|
 |--|--|
@@ -8,9 +7,7 @@
 
 ## Activity-2
 
-### In Action
 ![screen 1500px](simulation/Activity2.PNG)
-
 
 |Build|Cpp Check|Codacy|
 |-----|---------|------|
