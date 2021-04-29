@@ -1,7 +1,6 @@
 #include "heatcontrol.h"
 #include <avr/io.h>
 
-
 void peripheralInit()
 {
     DDRB|=(1<<PB0);         //Set B0=1 for LED
