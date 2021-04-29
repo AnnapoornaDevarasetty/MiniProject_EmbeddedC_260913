@@ -1,4 +1,4 @@
-#include "heatcontrol.h"
+#include "activity1.h"
 #include <avr/io.h>
 
 void peripheralInit()
