@@ -3,7 +3,7 @@
 #include <util/delay.h>
 #include<string.h>
 
-void UART_Init(uint16_t ubrrVal)
+void UART_Init(uint16_t ubrrVal)                                  //UART Intialization
 {
 
     UBRR0L = ubrrVal;
@@ -13,7 +13,7 @@ void UART_Init(uint16_t ubrrVal)
 
 }
 
-char UART_Read()
+char UART_Read()                                                  //Reading the temperature values given by the user
 {
     while(!(UCSR0A & (1<<RXC0)))
     {
@@ -22,7 +22,7 @@ char UART_Read()
     return UDR0;
 }
 
-void UART_Write(char data)
+void UART_Write(char data)                                       //Returns the value of temperature selected by the user
 {
     while(!(UCSR0A & (1<<UDRE0)))
     {

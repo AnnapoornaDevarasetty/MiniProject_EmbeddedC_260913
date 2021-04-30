@@ -18,16 +18,16 @@
 
 
 /**
- * @brief Main program to execute the Heat Control System
+ * @brief Main program to execute the Seat Heater Control System
  * 
  * @return int 
  */
 int main(void)
 {
     peripheralInit();
-    Init_ADC();
-    TimerGenerator();
-    UART_Init(103);
+    Init_ADC();                                        //Intializing ADC(Analog to Digital convertor)
+    TimerGenerator();                                  //Generates the Timer Wave
+    UART_Init(103);                                    //Intializing UART
     uint16_t read;
     while(1)
     {
@@ -37,7 +37,7 @@ int main(void)
             while(1)
             {
                 read=Read_ADC(0);
-                PWMOutput(read);
+                PWMOutput(read);                       //PWM Output of the given temperature input by ADC
                 _delay_ms(200);
             }
 

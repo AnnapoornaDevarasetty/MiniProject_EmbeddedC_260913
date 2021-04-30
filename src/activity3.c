@@ -3,14 +3,14 @@
 #include <util/delay.h>
 #include<string.h>
 
-void TimerGenerator(void)
+void TimerGenerator(void)                           //Generates a timer wave for the analog input given
 {
     TCCR1A|=(1<<COM1A1)|(1<<WGM10)|(1<<WGM11);
     TCCR1B|=(1<<WGM12)|(1<<CS11)|(1<<CS10);
     DDRB|=(1<<PB1);
 }
 
-char PWMOutput(uint16_t ADCval)
+char PWMOutput(uint16_t ADCval)                     
 {
     int i;
     if((ADCval>=0) && (ADCval<=200))
@@ -59,7 +59,7 @@ char PWMOutput(uint16_t ADCval)
     }
     else
     {
-        OCR1A = 0; //0% output
+        OCR1A = 0;     //0% output
         char temp5[25]="Heater is OFF\n";
         for(i=0;i<=15;i++)
         {

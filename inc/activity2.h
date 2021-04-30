@@ -14,7 +14,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 /**
- * @brief Intialising analog to digital coverter
+ * @brief Intializing analog to digital coverter
  * 
  */
 void Init_ADC();

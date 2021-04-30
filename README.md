@@ -16,7 +16,7 @@
 ## Activity-4
 
 ![screen 1500px](simulation/Activity4.PNG)
-# Heat Control Application
+# Seat Heater Control System
 ## Simulation Process
 
 ![screen 1500px](simulation/Simulation_Process.gif)
