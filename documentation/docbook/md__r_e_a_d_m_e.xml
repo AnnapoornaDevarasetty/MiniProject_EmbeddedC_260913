@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__r_e_a_d_m_e" xml:lang="en-US">
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md1">
+<title>Activity-1</title>
+
+<para><informaltable frame="all">
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<thead>
+      <row  class='markdownTableHead'>
+<entry>
+<para>ON   </para>
+</entry><entry>
+<para>OFF    </para>
+</entry></row>
+</thead><tbody>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>   </para>
+</entry><entry>
+<para>   </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md2">
+<title>Activity-2</title>
+
+<para></para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md3">
+<title>Activity-3</title>
+
+<para></para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md4">
+<title>Activity-4</title>
+
+<para> </para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md5">
+<title>Seat Heater Control System</title>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md6">
+<title>Simulation Process</title>
+
+<para></para>
+
+<para><informaltable frame="all">
+    <tgroup cols="3" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+<thead>
+      <row  class='markdownTableHead'>
+<entry>
+<para>Build   </para>
+</entry><entry>
+<para>Cpp Check   </para>
+</entry><entry>
+<para>Codacy    </para>
+</entry></row>
+</thead><tbody>
+      <row  class='markdownTableRowOdd'>
+<entry>
+<para>   </para>
+</entry><entry>
+<para>   </para>
+</entry><entry>
+<para><link xlink:href="https://www.codacy.com/gh/AnnapoornaDevarasetty/MiniProject_EmbeddedC_260913/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AnnapoornaDevarasetty/MiniProject_EmbeddedC_260913&amp;utm_campaign=Badge_Grade"></link>   </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+</section>
+</section>
+</section>

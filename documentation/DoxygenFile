@@ -32,7 +32,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = Activity1
+PROJECT_NAME           = SeatHeaterControlSystem
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -2128,7 +2128,7 @@ XML_NS_MEMB_FILE_SCOPE = NO
 # that can be used to generate PDF.
 # The default value is: NO.
 
-GENERATE_DOCBOOK       = NO
+GENERATE_DOCBOOK       = YES
 
 # The DOCBOOK_OUTPUT tag is used to specify where the Docbook pages will be put.
 # If a relative path is entered the value of OUTPUT_DIRECTORY will be put in
